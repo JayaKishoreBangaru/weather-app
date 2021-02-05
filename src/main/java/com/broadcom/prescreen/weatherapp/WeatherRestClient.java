@@ -17,11 +17,8 @@ public class WeatherRestClient {
 
 
     static RestTemplate restTemplate = new RestTemplate();
-    /*public static void main(String[] args)  {
-        callGetWeatherForecastByCoordinatesAPI(42.6526,-73.7562);
-    }*/
     public String callGetWeatherForecastByCoordinatesAPI(double x, double y)  {
-        System.out.println("Lattitude is : "+x);
+        System.out.println("Latitude is : "+x);
         System.out.println("Longitude is : "+y);
         HttpHeaders headers = new HttpHeaders();
         Map<String, Double> param = new HashMap<>();

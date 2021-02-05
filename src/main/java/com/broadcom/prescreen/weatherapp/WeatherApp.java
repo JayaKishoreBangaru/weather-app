@@ -3,10 +3,6 @@ package com.broadcom.prescreen.weatherapp;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
-
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
 import java.util.Scanner;
 
 @SpringBootApplication
@@ -25,7 +21,7 @@ public class WeatherApp {
 		System.out.println("Enter Latitude: ");
 		while (!sc.hasNextDouble())
 		{
-			System.out.println("Invalid input\n please type number:");
+			System.out.println("Invalid input\n Please type number:");
 			sc.next();
 		}
 		x=sc.nextDouble();
@@ -33,7 +29,7 @@ public class WeatherApp {
 		System.out.println("Enter Longitude: ");
 		while (!sc.hasNextDouble())
 		{
-			System.out.println("Invalid input\n please type number:");
+			System.out.println("Invalid input\n Please type number:");
 			sc.next();
 		}
 		y=sc.nextDouble();
